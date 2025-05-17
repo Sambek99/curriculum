@@ -50,6 +50,7 @@ nav {
     padding: 15px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    position: relative;
 }
 
 #nav-list {
@@ -57,7 +58,7 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 100px;
+    gap: 15px;
     font-size: 20px;
 }
 
@@ -66,6 +67,38 @@ nav {
     color: #ffffff;
 }
 
+#hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#nav-list li {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    #hamburger-menu {
+        display: block;
+    }
+
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav-list.active {
+        display: flex;
+    }
+}
 
 main {
     margin: 20px;
@@ -86,7 +119,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 10px;
-}
+ }
 
 .skills-container img {
     transition: transform 0.3s ease;

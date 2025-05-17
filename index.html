@@ -12,14 +12,32 @@
 </head>
 <body id="body"></body>
     <nav id="nav">
+        <button id="hamburger-menu" aria-label="Toggle navigation">
+            ☰
+        </button>
         <ul id="nav-list">
-        <li id="nav-profile"><a href="#profile">Profile</a></li>
-        <li id="nav-education"><a href="#education">Education</a></li>
-        <li id="nav-skills"><a href="#skills">Skills</a></li>
-        <li id="nav-languages"><a href="#languages">Languages</a></li>
-        <li id="nav-projects"><a href="#projects">Projects</a></li>
+            <li id="nav-profile"><a href="#profile">Profile</a></li>
+            <li id="nav-education"><a href="#education">Education</a></li>
+            <li id="nav-skills"><a href="#skills">Skills</a></li>
+            <li id="nav-languages"><a href="#languages">Languages</a></li>
+            <li id="nav-projects"><a href="#projects">Projects</a></li>
         </ul>
-    </nav>  
+    </nav>
+
+    <style>
+        
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburgerMenu = document.getElementById("hamburger-menu");
+            const navList = document.getElementById("nav-list");
+
+            hamburgerMenu.addEventListener("click", () => {
+                navList.classList.toggle("active");
+            });
+        });
+    </script>
     <header id="header">
         <style>
             .section-separator {
@@ -74,8 +92,6 @@
         </div>
 
         <section id="education">
-            <h2 id="education-title">Education</h2>
-            
 
             <div class="language-skill">
                 <h2 id="languages-title">Languages</h2>
@@ -94,6 +110,7 @@
             </div>
 
             <div id="educationitens">
+                <h2 id="education-title">Education</h2>
                 <article id="education-copol">
                     <h3>Bachiller en Ciencias - Colegio Particular Politécnico - COPOL</h3>
                     <p><strong>Dates:</strong> April 2012 - March 2018</p>
