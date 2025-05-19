@@ -34,6 +34,7 @@ body {
     border-radius: 50%;
     margin: 10%;
     align-items: center;
+    justify-content: center;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -43,6 +44,10 @@ body {
 }
 
 #header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-right: 20%;
     margin-top: 15%;
     font-weight: bold;
@@ -205,4 +210,21 @@ input:focus,
 a:focus {
     outline: 2px solid #4caf50;
     outline-offset: 2px;
+}
+
+/* ===== PROJECTS ===== */
+#projects{
+    font-size: 20px;
+    text-align: justify;
+}
+/* MOTIVATION */
+#motivation {
+    display: flex;
+    flex-direction: column;
+}
+#video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
 }
