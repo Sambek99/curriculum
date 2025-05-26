@@ -201,10 +201,16 @@ main {
     margin: 2% 0;
 }
 
+@media screen and (max-width: 936px) {
+    .language-skill p {
+        margin: 10% 0;
+    }
+}
+
 .bar {
     background: #eeeeee;
-    height: 10px;
-    border-radius: 5px;
+    height: 25px;
+    border-radius: 50px;
     overflow: hidden;
     margin-bottom: 10px;
 }
