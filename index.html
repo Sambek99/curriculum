@@ -14,7 +14,9 @@
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <script>
@@ -51,7 +53,7 @@
     <main id="main">
         <section id="firstdata">
             <section id="profile">
-                <h2 id="profile-title">About me</h2>
+                <h2 id="subtitle">About me</h2>
                 <p id="profile-description">Hello, my name is Beker Gaona, I'm a technology and language
                     enthusiast.Always eager to learn new things. <br><BR> Currently serving as the coordinator of a
                     student organization at ESPOL and as employee of the university's library CIB, seeking a job
@@ -60,7 +62,7 @@
             </section>
 
             <div class="language-skill">
-                <h2 id="languages-title">Languages</h2>
+                <h2 id="subtitle">Languages</h2>
 
                 <p>Spanish - native</p>
                 <div class="bar">
@@ -88,7 +90,7 @@
         <section id="education">
 
             <section id="skills">
-                <h2 id="skills-title">Skills & Frameworks</h2>
+                <h2 id="subtitle">Skills & Frameworks</h2>
                 <div class="skills-container">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
                         alt="Logo de Python" width="100">
@@ -117,7 +119,7 @@
 
 
             <div id="educationitens">
-                <h2 id="education-title">Education</h2>
+                <h2 id="subtitle">Education</h2>
                 <table>
                     <thead>
                         <tr>
@@ -165,7 +167,7 @@
         </section>
 
         <section id="motivation">
-            <h2>Motivation</h2>
+            <h2 id="subtitle">Motivation</h2>
             <div id="video">
                 <iframe width="588" height="330" src="https://www.youtube.com/embed/CxGSnA-RTsA?si=b9dgE4xzWPSXUdNl"
                     title="YouTube video player" frameborder="0"
@@ -174,32 +176,34 @@
             </div>
         </section>
 
+        <h2 id="subtitle">Projects</h2>
         <section id="projects">
-            <h2 id="projects-title">Projects</h2>
-            <article id="project-tic-tac-toe"></article>
-            <h3><br>Project: Tic-Tac-Toe</h3>
-            <p><strong><br>Description:</strong> This project is a Java implementation of the classic Tic-Tac-Toe game,
-                developed as part of the Data Structures course. The main objective is to apply fundamental concepts of
-                data structures and programming logic to create a functional and simple version of the game.</p>
-            <p><strong>Technologies:</strong> Java</p>
-            <p><strong>Repository:</strong> <a href="https://github.com/Sambek99/ED_P1_Grupo2"
-                    target="_blank">https://github.com/Sambek99/ED_P1_Grupo2</a></p>
-            </article>
-            <article id="project-php"></article>
-            <h3><br>Project: PHP Implementation<br></h3>
-            <p><strong>Description:</strong> This repository is part of an academic project for the Programming
-                Languages course, focused on implementing an interpreter for a subset of the PHP language. The main
-                objective is to analyze and execute PHP code using lexical and syntactic analysis techniques, applying
-                fundamental concepts of compilers and language processing.</p>
-            <p><strong>Technologies:</strong> PHP</p>
-            <p><strong>Repository:</strong> <a href="https://github.com/Sambek99/PHP"
-                    target="_blank">https://github.com/Sambek99/PHP</a></p>
-            </article>
+            <div class="container">
+                <div class="card">
+                  <div class="box">
+                    <div class="content">
+                      <h3>PHP Implementation</h3>
+                      <p>This repository is part of a Programming Languages course project focused on building an interpreter for a subset of PHP using lexical and syntactic analysis.</p>
+                      <a href="https://github.com/Sambek99/PHP">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="card">
+                  <div class="box">
+                    <div class="content">
+                      <h3>Tic-Tac-Toe</h3>
+                      <p>Java implementation of Tic-Tac-Toe developed for the Data Structures course, applying key concepts of data structures and programming logic.</p>
+                      <a href="https://github.com/Sambek99/ED_P1_Grupo2">Read More</a>
+                    </div>
+                  </div>
+                </div>
+            </div>  
         </section>
 
         <section id="references">
-            <h2>Job References</h2>
-            <br>
+            <h2 id="subtitle">Job References</h2>
+            <br>    
             <article class="reference-item">
                 <blockquote>"Una persona comprometida, con gran iniciativa y autonomía para resolver problemas
                     complejos."</blockquote>
@@ -233,7 +237,7 @@
 
         <section id="information">
             <section id="Contact">
-                <h2>Send me a message</h2>
+                <h2 id="subtitle">Send me a message</h2>
                 <form action="/action_page.php">
                     <label for="fname">Name:</label>
                     <input type="text" id="fname" name="fname" placeholder="Jhon Doe"><br>
@@ -252,7 +256,7 @@
                 </form>
             </section>
             <section id="Map">
-                <h2>Office</h2>
+                <h2 id="subtitle">Office</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.37702259504886!2d-79.96622285867689!3d-2.147491105834378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7301bceb4a73%3A0x21ecd4f5738c8c9c!2sCentro%20De%20Informaci%C3%B3n%20Bibliotecario!5e0!3m2!1ses-419!2sec!4v1747330735412!5m2!1ses-419!2sec"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
