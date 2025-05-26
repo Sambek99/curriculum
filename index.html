@@ -12,6 +12,9 @@
     <meta name="keywords"
         content="Curriculum Vitae, Beker Gaona, Resume, Education, Skills, Projects, Languages, ESPOL">
     <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 
 <script>
@@ -29,13 +32,12 @@
 
 <body id="body">
     <nav id="nav">
-        <ul id="nav-list">
-            <li id="nav-profile"><a href="#profile">Profile</a></li>
-            <li id="nav-education"><a href="#education">Education</a></li>
-            <li id="nav-skills"><a href="#skills">Skills</a></li>
-            <li id="nav-languages"><a href="#languages">Languages</a></li>
-            <li id="nav-projects"><a href="#projects">Projects</a></li>
-        </ul>
+        <a id="nav-profile" href="#profile">Profile</a>
+        <a id="nav-education" href="#education">Education</a>
+        <a id="nav-skills" href="#skills">Skills</a>
+        <a id="nav-languages" href="#languages">Languages</a>
+        <a id="nav-projects" href="#projects">Projects</a>
+        <a href="#references">References</a>
     </nav>
     <header id="header">
         <img src="Beker.JPG" alt="Beker's Photo">
@@ -56,6 +58,34 @@
                     opportunity that allows me to professionally apply the academic knowledge acquired during my
                     university studies.</p>
             </section>
+
+            <div class="language-skill">
+                <h2 id="languages-title">Languages</h2>
+
+                <p>Spanish - native</p>
+                <div class="bar">
+                    <div class="fill" style="width: 100%;"></div>
+                </div>
+
+                <p>English - B2</p>
+                <div class="bar">
+                    <div class="fill" style="width: 90%;"></div>
+                </div>
+
+                <p>German - B1</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+
+                <p>Catalan - B1</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="education">
 
             <section id="skills">
                 <h2 id="skills-title">Skills & Frameworks</h2>
@@ -83,58 +113,53 @@
 
                 </div>
             </section>
-        </section>
 
-        <section id="education">
 
-            <div class="language-skill">
-                <h2 id="languages-title">Languages</h2>
-
-                <p>Spanish - native</p>
-                <div class="bar">
-                    <div class="fill" style="width: 100%;"></div>
-                </div>
-
-                <p>English - B2</p>
-                <div class="bar">
-                    <div class="fill" style="width: 90%;"></div>
-                </div>
-
-                <p>German - B1</p>
-                <div class="bar">
-                    <div class="fill" style="width: 50%;"></div>
-                </div>
-
-                <p>Catalan - B1</p>
-                <div class="bar">
-                    <div class="fill" style="width: 50%;"></div>
-                </div>
-            </div>
 
             <div id="educationitens">
                 <h2 id="education-title">Education</h2>
-                <article id="education-copol">
-                    <h3>Bachiller en Ciencias - Colegio Particular Politécnico - COPOL</h3>
-                    <p><strong>Dates:</strong> April 2012 - March 2018</p>
-                    <p>IB's certificate of physics high level and CAS Program (Creativity Action Service)</p>
-                </article>
-                <article id="education-catalan">
-                    <h3>Catalan B1 - Institut Ramon Llull</h3>
-                    <p><strong>Dates:</strong> February 2021 - November 2023</p>
-                </article>
-                <article id="education-german"></article>
-                <h3>German B1.1 - Centro Cultural Ecuatoriano Alemán</h3>
-                <p><strong>Dates:</strong> June 2017 - May 2018</p>
-                </article>
-                <article id="education-mechatronics"></article>
-                <h3>Mechatronics - Escuela Superior Politécnica del Litoral - ESPOL</h3>
-                <p><strong>Dates:</strong> October 2018 - October 2023</p>
-                <p><em>Not completed</em></p>
-                </article>
-                <article id="education-computer-science"></article>
-                <h3>Computer Science major - Escuela Superior Politécnica del Litoral - ESPOL</h3>
-                <p><strong>Dates:</strong> October 2023 - Present</p>
-                </article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Institution</th>
+                            <th>Dates</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="education-copol">
+                            <td>Bachiller en Ciencias</td>
+                            <td>Colegio Particular Politécnico - COPOL</td>
+                            <td>April 2012 - March 2018</td>
+                            <td>IB's certificate of physics high level and CAS Program (Creativity Action Service)</td>
+                        </tr>
+                        <tr id="education-catalan">
+                            <td>Catalan B1</td>
+                            <td>Institut Ramon Llull</td>
+                            <td>February 2021 - November 2023</td>
+                            <td></td>
+                        </tr>
+                        <tr id="education-german">
+                            <td>German B1.1</td>
+                            <td>Centro Cultural Ecuatoriano Alemán</td>
+                            <td>June 2017 - May 2018</td>
+                            <td></td>
+                        </tr>
+                        <tr id="education-mechatronics">
+                            <td>Mechatronics</td>
+                            <td>Escuela Superior Politécnica del Litoral - ESPOL</td>
+                            <td>October 2018 - October 2023</td>
+                            <td><em>Not completed</em></td>
+                        </tr>
+                        <tr id="education-computer-science">
+                            <td>Computer Science major</td>
+                            <td>Escuela Superior Politécnica del Litoral - ESPOL</td>
+                            <td>October 2023 - Present</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </section>
@@ -142,7 +167,10 @@
         <section id="motivation">
             <h2>Motivation</h2>
             <div id="video">
-                <iframe width="588" height="330" src="https://www.youtube.com/embed/CxGSnA-RTsA?si=b9dgE4xzWPSXUdNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="588" height="330" src="https://www.youtube.com/embed/CxGSnA-RTsA?si=b9dgE4xzWPSXUdNl"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -169,17 +197,58 @@
             </article>
         </section>
 
-        <div id="information">
+        <section id="references">
+            <h2>Job References</h2>
+            <br>
+            <article class="reference-item">
+                <blockquote>"Una persona comprometida, con gran iniciativa y autonomía para resolver problemas
+                    complejos."</blockquote>
+                <p><strong>Nombre:</strong> Laura Martínez</p>
+                <p><strong>Cargo:</strong> Jefa de Proyectos, TechNova Solutions</p>
+                <p>Trabajamos juntos en el desarrollo de una aplicación de gestión logística. Su enfoque práctico y
+                    buena comunicación fueron clave para cumplir con los plazos del proyecto.</p>
+            </article>
+
+            <article class="reference-item">
+                <blockquote>"Siempre mostró responsabilidad y disposición para aprender, incluso en entornos de alta
+                    presión."</blockquote>
+                <p><strong>Nombre:</strong> Andrés Pérez</p>
+                <p><strong>Cargo:</strong> Coordinador de Tecnología, Grupo ALFA</p>
+                <p>Colaboramos en un sistema interno para manejo de inventario. Fue fundamental en la implementación del
+                    backend, mostrando dominio en bases de datos y lógica de negocio.</p>
+            </article>
+
+            <article class="reference-item">
+                <blockquote>"Su creatividad y ética profesional lo distinguen, especialmente en proyectos donde se
+                    requiere innovación."</blockquote>
+                <p><strong>Nombre:</strong> Karla Rodríguez</p>
+                <p><strong>Cargo:</strong> Líder UX/UI, Estudio KREO</p>
+                <p>Colaboramos en el rediseño de una interfaz web para una plataforma educativa. Su habilidad para
+                    convertir ideas en soluciones funcionales fue muy valorada por el equipo.</p>
+            </article>
+        </section>
+
+
+        </section>
+
+        <section id="information">
             <section id="Contact">
                 <h2>Send me a message</h2>
                 <form action="/action_page.php">
-                    <label for="fname">Name:</label><br>
+                    <label for="fname">Name:</label>
                     <input type="text" id="fname" name="fname" placeholder="Jhon Doe"><br>
-                    <label for="fmail">email:</label><br>
+                    <label for="fmail">email:</label>
                     <input type="text" id="fmail" name="fname" placeholder="Jhondoe@example.com"><br>
-                    <label for="content">Send me a message:</label><br>
+                    <label for="content">Reason for contact:</label>
+                    <select id="options" name="options">
+                        <option value="Choose an option" disabled selected>Choose an option</option>
+                        <option value="option1">Job offer</option>
+                        <option value="option2">Invitation</option>
+                    </select>
+                    <label for="content">Send me a message:</label>
                     <textarea name="message" rows="10" cols="30" placeholder="Tell me what you need."></textarea>
                     <input type="submit" value="Submit">
+
                 </form>
             </section>
             <section id="Map">
@@ -190,8 +259,7 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </section>
-        </div>
-
+        </section>
     </main>
     <footer id="footer">
         <p id="footer-text">&copy; 2025 Beker. All rights reserved.</p>

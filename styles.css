@@ -6,22 +6,29 @@
 }
 
 body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
+    background-color: #0f0e17;
+    color: #a7a9be;
+    font-family: "Nunito Sans", sans-serif;
     margin-top: 0;
 }
 
+
 /* ===== HEADER ===== */
 #header {
-    color: #ffffff;
+    color: #fffffe;
     padding: 0;
     text-align: center;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem;
+    /* 18px */
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
     height: 40vh;
+}
+
+#header a {
+    color: #e53170;
+    text-decoration: none;
 }
 
 .section-separator {
@@ -51,42 +58,72 @@ body {
     margin-right: 20%;
     margin-top: 15%;
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
 }
 
-#contenido{
-    height:fit-content;
+#contenido {
+    height: fit-content;
 }
 
 /* ===== NAVIGATION ===== */
 nav {
     display: flex;
-    background-color: #000000;
     width: 100%;
     z-index: 1000;
-    justify-content: center;
-    padding: 1%;
-    font-family: "Poppins", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
     font-weight: bold;
-    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#nav-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 40px;
-    font-size: 1.25rem; /* 20px */
-}
-
-#nav-list a {
+#nav a {
+    color: inherit;
     text-decoration: none;
-    color: #ffffff;
+    font-size: 18px;
 }
 
-#nav-list li {
-    display: inline;
+
+#nav-logo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#nav-list a:hover {
+    color: #4caf50;
+}
+
+#hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem 0;
+        gap: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+
+    #nav-list.active {
+        display: flex;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
 }
 
 #hamburger-menu {
@@ -104,11 +141,13 @@ main {
 
 /* ===== FOOTER ===== */
 #footer {
-    background-color: #000000;
+    background-color: #0f0e17;
     color: #ffffff;
     padding: 1%;
     text-align: center;
-    font-size: 1.125rem; /* 18px */
+    align-items: center;
+    font-size: 1.125rem;
+    /* 18px */
 }
 
 /* ===== SKILLS ===== */
@@ -145,7 +184,8 @@ main {
 }
 
 #profile {
-    font-size: 1.5625rem; /* 25px */
+    font-size: 1.5625rem;
+    /* 25px */
     text-align: justify;
     margin-right: 3%;
 }
@@ -163,8 +203,12 @@ main {
 }
 
 .fill {
-    background: #4caf50;
+    background: #f25f4c;
     height: 100%;
+}
+
+#projects a {
+    color: #e53170;
 }
 
 /* ===== INFORMATION EXTRA ===== */
@@ -189,8 +233,8 @@ input {
 }
 
 input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
+    background-color: #ff8906;
+    color: #fffffe;
     border: none;
     padding: 2% 3%;
     text-transform: uppercase;
@@ -202,29 +246,68 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #ee9c3e;
 }
 
 /* ===== ACCESIBILIDAD ===== */
 input:focus,
 a:focus {
-    outline: 2px solid #4caf50;
+    outline: 2px solid #ee9c3e;
     outline-offset: 2px;
 }
 
 /* ===== PROJECTS ===== */
-#projects{
+#projects {
     font-size: 20px;
     text-align: justify;
 }
+
 /* MOTIVATION */
 #motivation {
     display: flex;
     flex-direction: column;
 }
-#video{
+
+#video {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2%;
+}
+
+/* education */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+/*REFERENCES */
+#references {
+    margin-top: 40px;
+}
+
+.reference-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    border-left: 4px solid #f25f4c;
+    background-color: #fffffe;
+}
+
+.reference-item p {
+    color: #333;
+}
+
+.reference-item blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 0 0 10px 0;
 }
