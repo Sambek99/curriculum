@@ -181,29 +181,31 @@
             <h2 id="subtitle">Projects</h2>
             <div class="container">
                 <div class="card">
-                  <div class="box">
-                    <div class="content">
-                      <h3>PHP Implementation</h3>
-                      <p>This repository is part of a Programming Languages course project focused on building an interpreter for a subset of PHP using lexical and syntactic analysis.</p>
-                      <a href="https://github.com/Sambek99/PHP">Read More</a>
+                    <div class="box">
+                        <div class="content">
+                            <h3>PHP Implementation</h3>
+                            <p>This repository is part of a Programming Languages course project focused on building an
+                                interpreter for a subset of PHP using lexical and syntactic analysis.</p>
+                            <a href="https://github.com/Sambek99/PHP">Read More</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              
+
                 <div class="card">
-                  <div class="box">
-                    <div class="content">
-                      <h3>Tic-Tac-Toe</h3>
-                      <p>Java implementation of Tic-Tac-Toe developed for the Data Structures course, applying key concepts of data structures and programming logic.</p>
-                      <a href="https://github.com/Sambek99/ED_P1_Grupo2">Read More</a>
+                    <div class="box">
+                        <div class="content">
+                            <h3>Tic-Tac-Toe</h3>
+                            <p>Java implementation of Tic-Tac-Toe developed for the Data Structures course, applying key
+                                concepts of data structures and programming logic.</p>
+                            <a href="https://github.com/Sambek99/ED_P1_Grupo2">Read More</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-            </div>  
+            </div>
         </section>
 
         <section id="references">
-            <h2 id="subtitle">Job References</h2>            
+            <h2 id="subtitle">Job References</h2>
             <article class="reference-item">
                 <p><strong>Laura Martínez</strong></p>
                 <p><strong>Jefa de Proyectos, TechNova Solutions</strong></p>
@@ -240,19 +242,47 @@
                 <h2 id="subtitle">Send me a message</h2>
                 <form action="/action_page.php">
                     <label for="fname">Name:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Jhon Doe"><br>
+                    <input type="text" id="fname" name="fname" placeholder="Jhon Doe" required>
+
                     <label for="fmail">email:</label>
-                    <input type="text" id="fmail" name="fname" placeholder="Jhondoe@example.com"><br>
-                    <label for="content">Reason for contact:</label>
-                    <select id="options" name="options">
-                        <option value="Choose an option" disabled selected>Choose an option</option>
+                    <input type="email" id="fmail" name="fmail" placeholder="Jhondoe@example.com" required>
+
+                    <label for="options">Reason for contact:</label>
+                    <select id="options" name="options" required>
+                        <option value="" disabled selected>Choose an option</option>
                         <option value="option1">Job offer</option>
                         <option value="option2">Invitation</option>
                     </select>
-                    <label for="content">Send me a message:</label>
-                    <textarea name="message" rows="10" cols="30" placeholder="Tell me what you need."></textarea>
-                    <input type="submit" value="Submit">
 
+                    <p>Preferred contact method:</p>
+                    <label>
+                        <input type="radio" name="contact_method" value="email" required
+                            onchange="showContactInput(this.value)">
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contact_method" value="phone" required
+                            onchange="showContactInput(this.value)">
+                        Phone
+                    </label>
+
+                    <div id="contactInputContainer"></div>
+
+                    <p>Topics of interest:</p>
+                    <label>
+                        <input type="checkbox" name="interests" value="web" required>
+                        Web Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="design" required>
+                        Design
+                    </label>
+
+                    <label for="message">Send me a message:</label>
+                    <textarea id="message" name="message" rows="10" cols="30" placeholder="Tell me what you need."
+                        required></textarea>
+
+                    <input type="submit" value="Submit">
                 </form>
             </section>
             <section id="Map">

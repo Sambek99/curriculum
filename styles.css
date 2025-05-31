@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
 /* ===== RESET Y BASE ===== */
 * {
     box-sizing: border-box;
@@ -26,11 +27,12 @@ body {
     padding: 0;
     text-align: center;
     font-size: 1.125rem;
-    /* 18px */
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
     height: 40vh;
+    align-items: center;
+    justify-items: center;
 }
 
 #header a {
@@ -44,11 +46,8 @@ body {
 }
 
 #header img {
-    height: 10%;
+    height: 35vh;
     border-radius: 50%;
-    margin: 10%;
-    align-items: center;
-    justify-content: center;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -57,18 +56,15 @@ body {
     transform: scale(1.1);
 }
 
-#header div {
+#contenido {
+    height: 40vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 20%;
-    margin-top: 15%;
+    flex-direction: column;
     font-weight: bold;
-}
-
-#contenido {
-    height: fit-content;
+    font-size: x-large;
 }
 
 /* ===== NAVIGATION ===== */
@@ -125,6 +121,7 @@ main {
 }
 
 /* ===== SKILLS ===== */
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +129,10 @@ main {
     justify-content: center;
     align-items: center;
     padding: 1%;
+}
+
+.skills h2 {
+    flex: 0 0 100%;
 }
 
 .skills-container img {
@@ -158,10 +159,10 @@ main {
 }
 
 #profile {
-    font-size: 1.5625rem;
-    /* 25px */
+    font-size: 1.54rem;
     text-align: justify;
     margin-right: 3%;
+    justify-content: center;
 }
 
 .language-skill p {
@@ -188,7 +189,8 @@ main {
 
 #information iframe {
     width: 100%;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 350px);
+    border-radius: 3%;
 }
 
 /* ===== FORMULARIO ===== */
@@ -376,7 +378,7 @@ td {
 
 #references h2 {
     flex: 0 0 100%;
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     color: #e53170;
     margin-bottom: 1rem;
@@ -402,11 +404,13 @@ td {
     font-size: 1rem;
     margin-top: 1rem;
     line-height: 1.5;
-    color: #ffffff; /* Single tone color for quotes */
+    color: #ffffff;
+    /* Single tone color for quotes */
 }
 
 .reference-item h3 {
-    color: #ff8906; /* Updated harmonizing tone for name and position */
+    color: #ff8906;
+    /* Updated harmonizing tone for name and position */
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
@@ -434,6 +438,10 @@ td {
     #hamburger-menu {
         display: block;
     }
+
+    #contenido {
+        font-size: large;
+    }
 }
 
 @media screen and (max-width: 936px) {
@@ -444,5 +452,90 @@ td {
     .skills-container {
         gap: 20%;
         padding: 15%;
+    }
+
+    #contenido {
+        font-size: 1rem;
+        margin-right: 12%;
+    }
+
+    #header img {
+        height: 30vh;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* reglas CSS para pantallas de hasta 600px de ancho (móviles) */
+    #header {
+        color: #fffffe;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        align-items: center;
+        justify-items: center;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    #profile {
+        font-size: 1.2rem;
+        text-align: justify;
+        margin-right: 0%;
+    }
+
+    #main {
+        margin: 5%;
+    }
+
+    #header img {
+        height: 25vh;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    #contenido {
+        height: fit-content;
+        width: 100%;
+        margin-right: 0%;
+        font-size: small;
+    }
+
+    #information,
+    #firstdata,
+    #education,
+    #dataprojects {
+        display: grid;
+        gap: 0.3rem;
+        grid-template-columns: 1fr;
+    }
+
+    #education .skills-container {
+        width: fit-content;
+    }
+
+    #educationitems {
+        width: 75%;
+        font-size: smaller
+    }
+
+    table {
+        width: 75%;
+    }
+
+    nav {
+        display: block;
+        width: fit-content%;
+        z-index: 1000;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 9%;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 }
