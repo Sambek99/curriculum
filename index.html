@@ -31,9 +31,11 @@
         });
     });
 </script>
+  
 
 <body id="body">
-    <nav id="nav">
+    <button id="hamburger-menu">&#9776;</button> 
+    <nav id="nav" class="">
         <a id="nav-profile" href="#profile">Profile</a>
         <a id="nav-education" href="#education">Education</a>
         <a id="nav-skills" href="#skills">Skills</a>
@@ -299,5 +301,16 @@
         <p id="footer-text">&copy; 2025 Beker. All rights reserved.</p>
     </footer>
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.getElementById("hamburger-menu");
+      const navList = document.getElementById("nav");
+  
+      hamburger.addEventListener("click", function () {
+        navList.classList.toggle("active");
+      });
+    });
+  </script>
 
 </html>
